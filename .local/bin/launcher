@@ -1,0 +1,30 @@
+#!/bin/sh
+
+killall dmenu && exit
+
+source ~/.cache/wal/colors.sh
+
+font="firacode nerd font:pixelsize=14"
+app=$(echo -e "Brave\nTerminal\nTelegram\nCode\nMinecraft\nDiscord" | dmenu -fn "$font" -sb "$color1" -i -l 10)
+
+case $app in
+
+"Brave")
+	brave --remote-debugging-port=9222;;
+
+"Terminal")
+	cd ~; st;;
+
+"Telegram")
+	telegram-desktop;;
+
+"Minecraft")
+	gdlauncher;;
+
+"Code")
+	code;;
+
+"Discord")
+	discord;;
+
+esac

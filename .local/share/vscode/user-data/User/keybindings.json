@@ -1,0 +1,12 @@
+[
+    {
+        "key": "ctrl+shift+a",
+        "command": "explorer.newFile",
+        "when": "explorerViewletVisible && !inputFocus"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletVisible && !inputFocus"
+    }
+]

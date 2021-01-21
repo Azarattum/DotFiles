@@ -1,0 +1,5 @@
+#!/bin/sh
+xrandr --setprovideroutputsource modesetting NVIDIA-0
+xrandr --auto
+xrdb .cache/wal/colors.Xresources
+exec dwm
