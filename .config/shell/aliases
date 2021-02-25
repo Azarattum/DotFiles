@@ -1,2 +1,3 @@
 alias nv=nvim
 alias wget="wget --hsts-file=$XDG_CACHE_HOME/wget-hsts"
+alias fuck="sudo \$(history | tail -n 1 | cut -c 8-)"
