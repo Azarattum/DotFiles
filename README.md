@@ -7,7 +7,7 @@ My personal dotfiles setup for arch.
 Using [stow](https://www.gnu.org/software/stow/):
 ```sh
 rm README.md
-stow *
+stow -t ~ *
 ```
 
 ## Dependencies
