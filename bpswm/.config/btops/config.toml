@@ -1,0 +1,34 @@
+renamers = ["classified", "constant"]
+
+[names]
+constant = "○ "
+
+[[names.classified]]
+" " = ["Brave-browser"]
+
+[[names.classified]]
+" " = ["code-oss"]
+
+[[names.classified]]
+" " = ["mpv"]
+
+[[names.classified]]
+"ﭮ " = ["discord"]
+
+[[names.classified]]
+"切 " = ["TelegramDesktop"]
+
+[[names.classified]]
+" " = ["gdlauncher", "Minecraft* 1.16.5"]
+
+[[names.classified]]
+" " = ["DesktopEditos"]
+
+[[names.classified]]
+" " = ["obs"]
+
+[[names.classified]]
+" " = ["Org.gnome.Nautilus"]
+
+[[names.classified]]
+" " = ["st-256color"]

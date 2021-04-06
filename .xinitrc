@@ -1,1 +1,0 @@
-/home/azarattum/.config/X11/xinitrc

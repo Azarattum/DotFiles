@@ -1,9 +1,0 @@
-{
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "explorer.confirmDelete": false,
-    "python.languageServer": "Microsoft",
-    "window.menuBarVisibility": "toggle",
-    "editor.fontFamily": "'FiraCode Nerd Font','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "editor.fontLigatures": true
-}

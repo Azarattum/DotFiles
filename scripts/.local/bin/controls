@@ -1,0 +1,27 @@
+#!/bin/sh
+
+killall dmenu && exit
+
+source ~/.cache/wal/colors.sh
+
+font="firacode nerd font:pixelsize=14"
+app=$(echo -e "File Manager\nMixer\nBluetooth\nScreenshot\nYouTube" | dmenu -fn "$font" -sb "$color1" -i -l 10)
+
+case $app in
+
+"File Manager")
+	$FILES;;
+
+"Mixer")
+	st -c tools -e pulsemixer;;
+
+"Bluetooth")
+	st -c tools -e bluetoothctl;;
+
+"Screenshot")
+	shot;;
+
+"YouTube")
+    export YTFZF_EXTMENU="dmenu -fn \"$font\" -sb \"$color1\" -i -l 10"
+    ytfzf -t -D;;
+esac

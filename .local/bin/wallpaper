@@ -1,5 +1,0 @@
-cp "$1" ~/.config/wall.jpg
-wal -c -q
-wal -s -q -i ~/.config/wall.jpg
-xrdb ~/.cache/wal/colors.Xresources
-xwallpaper --zoom ~/.config/wall.jpg
