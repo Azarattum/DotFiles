@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Trigger autorun
-$HOME/.config/autorun/run.sh
+$HOME/.config/autorun/run
 
 # Bspwm configs
 bspc config border_width         2
