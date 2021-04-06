@@ -6,7 +6,7 @@ My personal dotfiles setup for arch.
 
 Using [stow](https://www.gnu.org/software/stow/):
 ```sh
-rm README.md
+rm README.md .gitignore
 stow -t ~ *
 ```
 
