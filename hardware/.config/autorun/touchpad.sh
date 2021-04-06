@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Configure touchpad input
 id=$(xinput list | grep Touchpad | grep -Eo "id=[0-9]+" | grep -Eo "[0-9]+")
 xinput set-prop $id 'libinput Tapping Enabled' 1

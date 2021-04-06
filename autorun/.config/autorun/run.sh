@@ -1,3 +1,5 @@
+#!/bin/sh
+
 self=$(basename $0)
 
 # Run all except self

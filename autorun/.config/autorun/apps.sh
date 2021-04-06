@@ -1,3 +1,5 @@
+#!/bin/sh
+
 #Wallpaper
 xwallpaper --zoom .config/wall.jpg &
 #Compositor
