@@ -28,7 +28,7 @@ update_status () {
 
 	if [ "$1" = "Playing" ]; then
 		print_bar "$format" true
-		pgrep glava > /dev/null || glava > /dev/null &
+		sleep 1 && pgrep glava > /dev/null || glava > /dev/null &
 	elif [ "$1" = "Paused" ]; then
 		print_bar "$format" false
 	else
