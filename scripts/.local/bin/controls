@@ -10,7 +10,7 @@ app=$(echo -e "File Manager\nMixer\nBluetooth\nScreenshot\nYouTube" | dmenu -fn 
 case $app in
 
 "File Manager")
-	$FILES;;
+	st -e $FILES;;
 
 "Mixer")
 	st -c tools -e pulsemixer;;
