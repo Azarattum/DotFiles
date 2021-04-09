@@ -42,7 +42,7 @@ export VSCODE_PORTABLE=$XDG_DATA_HOME/vscode
 export GNUPGHOME=$XDG_DATA_HOME/gnupg
 
 # Go
-export GOPATH=XDG_DATA_HOME/go
+export GOPATH=$XDG_DATA_HOME/go
 
 # Docker
 export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
