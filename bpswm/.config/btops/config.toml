@@ -4,6 +4,12 @@ renamers = ["classified", "constant"]
 constant = "○ "
 
 [[names.classified]]
+"歷 " = ["GNS3"]
+
+[[names.classified]]
+" " = ["Qemu-system-x86_64", "realvnc-vncviewer"]
+
+[[names.classified]]
 " " = ["Brave-browser"]
 
 [[names.classified]]
@@ -11,6 +17,9 @@ constant = "○ "
 
 [[names.classified]]
 " " = ["mpv"]
+
+[[names.classified]]
+" " = ["Steam"]
 
 [[names.classified]]
 "ﭮ " = ["discord"]
