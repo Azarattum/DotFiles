@@ -52,5 +52,5 @@ export NUGET_PACKAGES=$XDG_CACHE_HOME/NuGetPackages
 export OMNISHARPHOME=$XDG_CACHE_HOME/omnisharp
 
 # PATH
-export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.local/bin:${XDG_DATA_HOME}/npm/bin:$PATH
 

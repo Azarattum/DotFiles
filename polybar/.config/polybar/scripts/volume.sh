@@ -3,13 +3,15 @@ default_name() {
 }
 
 default_vol() {
-    pacmd list-sinks |
-        awk '/^\s+name: /{indefault = $2 == "<'$(default_name)'>"}
-            /^\s+volume: / && indefault {print $5; exit}'
+    #pacmd list-sinks |
+        #awk '/^\s+name: /{indefault = $2 == "<'$(default_name)'>"}
+           # /^\s+volume: / && indefault {print $5; exit}'
+    pulsemixer --get-volume | awk '{print $1}'
 }
 
 default_mute() {
-    pacmd list-sinks | awk '/^\s+name: /{indefault = $2 == "<'$(default_name)'>"} /^\s+muted: / && indefault {print $2; exit}'
+    #pacmd list-sinks | awk '/^\s+name: /{indefault = $2 == "<'$(default_name)'>"} /^\s+muted: / && indefault {print $2; exit}'
+    pulsemixer --get-mute
 }
 
 print_vol () {
@@ -17,7 +19,7 @@ print_vol () {
 	mute=$(default_mute)
 
 	echo false > /tmp/vol_mute
-	if [ "$mute" = "yes" ]; then
+	if [ "$mute" = "1" ]; then
 	  echo "ﱝ"
 	  echo true > /tmp/vol_mute
 	elif [ "$(echo "$vol" | tr -d "%")" -gt 70 ]; then

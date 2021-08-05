@@ -1,3 +1,5 @@
 [user]
 	email = azarattum@pm.me
 	name = Azarattum
+[init]
+	defaultBranch = main
