@@ -12,3 +12,5 @@ btops &
 hotkeyer &
 #Music control
 playerctld daemon &
+#Hot corners
+cornora -tl launcher -tr controls -iof &

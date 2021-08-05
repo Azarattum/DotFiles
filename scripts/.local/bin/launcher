@@ -5,7 +5,7 @@ killall dmenu && exit
 source ~/.cache/wal/colors.sh
 
 font="firacode nerd font:pixelsize=14"
-app=$(echo -e "Brave\nTerminal\nTelegram\nCode\nMinecraft\nDiscord" | dmenu -fn "$font" -sb "$color1" -i -l 10)
+app=$(echo -e "Brave\nTerminal\nTelegram\nCode\nMinecraft\nDiscord" | dmenu -fn "$font" -sb "$color8" -i -l 10)
 
 case $app in
 
@@ -19,7 +19,7 @@ case $app in
 	telegram-desktop;;
 
 "Minecraft")
-	gdlauncher;;
+	gdlauncher-bin;;
 
 "Code")
 	code;;
