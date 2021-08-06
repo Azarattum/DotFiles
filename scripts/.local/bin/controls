@@ -5,7 +5,7 @@ killall dmenu && exit
 source ~/.cache/wal/colors.sh
 
 font="firacode nerd font:pixelsize=14"
-app=$(echo -e "File Manager\nMixer\nBluetooth\nScreenshot\nYouTube" | dmenu -fn "$font" -sb "$color8" -i -l 10)
+app=$(echo -e "  File Manager\n  Mixer\n  Bluetooth\n  Screenshot\n  YouTube" | dmenu -fn "$font" -sb "$color8" -i -l 10 | awk '{print $2}')
 
 case $app in
 
