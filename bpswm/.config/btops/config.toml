@@ -50,3 +50,6 @@ constant = "○ "
 
 [[names.classified]]
 " " = ["st-256color"]
+
+[[names.classified]]
+"漣 " = ["tools"]
