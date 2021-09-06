@@ -5,3 +5,4 @@ alias cs="ssh root@194.169.160.199"
 alias py=python
 alias yt="ytfzf -t"
 alias lf=lf-ueberzug
+alias picom=picom --experimental-backends
