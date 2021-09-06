@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #Clean up
-killall picom polybar btops hotkeyer playerctl cornora
+killall picom polybar btops keymapper playerctl cornora
 
 #Wallpaper
 xwallpaper --zoom .config/wall.jpg &
@@ -12,7 +12,7 @@ polybar main --config="~/.config/polybar/config.ini" &
 #Dynamic workspaces
 btops &
 #Hot keys
-hotkeyer &
+keymapper &
 #Music control
 playerctld daemon &
 #Hot corners
