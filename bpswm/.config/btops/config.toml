@@ -49,7 +49,7 @@ constant = "○ "
 " " = ["Org.gnome.Nautilus"]
 
 [[names.classified]]
-" " = ["st-256color"]
+" " = ["st-256color", "xterm-256color"]
 
 [[names.classified]]
 "漣 " = ["tools"]

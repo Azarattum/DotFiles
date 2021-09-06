@@ -12,12 +12,22 @@ stow -t ~ *
 
 ## Dependencies
 
+System:
+```
+pipewire pipewire-pulse networkmanager
+```
+
+Installation dependencies:
+```
+git stow zsh
+```
+
 Environment:
 ```
-bspwm git stow xwallpaper picom-git polybar btops-git hotkeyer-git playerctl slock scrot htop light-git networkmanager st bluez-utils xorg-setxkbmap neovim xorg-xinit xorg-xclipboard xorg-xinput xorg-xrandr xorg-xsetroot xorg-xrdb xclip dmenu zsh python-pywal otf-nerd-fonts-fira-code mpv-mpris ytfzf fzf st glava pulsemixer pipewire pipewire-pulse
+bspwm xwallpaper picom-jonaburg-git polybar btops-git hotkeyer-git playerctl slock scrot htop light-git st bluez-utils xorg-setxkbmap xorg-xinit xorg-xclipboard xorg-xinput xorg-xrandr xorg-xsetroot xorg-xrdb xclip dmenu nerd-fonts-fira-code mpv-mpris st pulsemixer
 ```
 
 Applications:
 ```
-mypaint nautilus brave-bin code discord steam telegram-desktop onlyoffice-bin gnome-calculator
+neovim mypaint nautilus brave-bin code discord steam telegram-desktop onlyoffice-bin gnome-calculator ytfzf glava
 ```
