@@ -24,7 +24,7 @@ git stow zsh
 
 Environment:
 ```
-bspwm xwallpaper picom-jonaburg-git polybar btops-git hotkeyer-git playerctl i3lock-fancy scrot htop light-git st bluez-utils xorg-setxkbmap xorg-xinit xorg-xclipboard xorg-xinput xorg-xrandr xorg-xsetroot xorg-xrdb xclip dmenu nerd-fonts-fira-code mpv-mpris st pulsemixer
+bspwm xwallpaper polybar keymapper picom-jonaburg-git btops-git playerctl i3lock-fancy scrot htop light-git st bluez-utils xorg-setxkbmap xorg-xinit xorg-xclipboard xorg-xinput xorg-xrandr xorg-xsetroot xorg-xrdb xclip dmenu nerd-fonts-fira-code mpv-mpris st pulsemixer
 ```
 
 Applications:
