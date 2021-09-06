@@ -1,5 +1,8 @@
 #!/bin/sh
 
+#Clean up
+killall picom polybar btops hotkeyer playerctl cornora
+
 #Wallpaper
 xwallpaper --zoom .config/wall.jpg &
 #Compositor
@@ -13,4 +16,4 @@ hotkeyer &
 #Music control
 playerctld daemon &
 #Hot corners
-cornora -tl launcher -tr controls -iof &
+cornora -tl launcher -tr controls -iof > /dev/null 2> /dev/null &
