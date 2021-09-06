@@ -1,4 +1,4 @@
 #!/bin/sh
 
 # Remove fake monitor
-bspc monitor VGA-0 -r
+(sleep 6 && bspc monitor VGA-0 -r) &
