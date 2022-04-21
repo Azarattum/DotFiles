@@ -20,6 +20,5 @@ case $app in
 	shot;;
 
 "YouTube")
-    export YTFZF_EXTMENU="dmenu -fn \"$font\" -sb \"$color8\" -i -l 10"
     ytfzf -t -D;;
 esac
