@@ -1,19 +1,25 @@
 #!/bin/sh
 
-#Clean up
+# Clean up
 killall picom polybar btops keymapper playerctl cornora
 
-#Wallpaper
+# Update monitor
+xrandr --auto
+# Set arrow cursor
+xsetroot -cursor_name left_ptr
+# Keyboard layout
+setxkbmap -layout us,ru -option grp:win_space_toggle
+# Wallpaper
 xwallpaper --zoom .config/wall.jpg &
-#Compositor
+# Compositor
 picom --experimental-backends & 
-#Status bar
+# Status bar
 polybar main --config="~/.config/polybar/config.ini" &
-#Dynamic workspaces
+# Dynamic workspaces
 btops &
-#Hot keys
+# Hot keys
 keymapper &
-#Music control
+# Music control
 playerctld daemon &
-#Hot corners
+# Hot corners
 cornora -tl launcher -tr controls -iof > /dev/null 2> /dev/null &
