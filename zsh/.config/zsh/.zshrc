@@ -1,14 +1,23 @@
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p9k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 source $HOME/.config/shell/profile.sh
 
-export ZSH="$XDG_DATA_HOME/oh-my-zsh"
-ZSH_THEME="powerlevel10k/powerlevel10k"
-source $ZSH/oh-my-zsh.sh
+# Prompt
+autoload -U colors && colors
+PS1="%B%{$fg[white]%}[%{$reset_color%} %{$fg[cyan]%}%~%{$fg[white]%}]%{$reset_color%}$%b "
 
-[[ ! -f $XDG_CONFIG_HOME/zsh/.p10k.zsh ]] || source $XDG_CONFIG_HOME/zsh/.p10k.zsh
+# Autocomplete
+autoload -U compinit
+zstyle ':completion:*' menu select
+zstyle ':completion:*:descriptions' format '%B%d%b'
+zstyle ':completion:*:messages' format '%d'
+zstyle ':completion:*:warnings' format 'No matches for: %d'
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+zmodload zsh/complist
+compinit
 
-# To apply color scheme from wal
-# cat ~/.cache/wal/sequences
+# Beam Cursor
+echo -ne '\e[5 q'
+preexec() { echo -ne '\e[5 q' ;}
+
+# Syntax Highlighting
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
