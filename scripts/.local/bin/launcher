@@ -2,10 +2,8 @@
 
 killall dmenu && exit
 
-source ~/.cache/wal/colors.sh
-
 font="firacode nerd font:pixelsize=14"
-app=$(echo -e "  Brave\n  Terminal\n切  Telegram\n  Code\n  Minecraft\nﭮ  Discord" | dmenu -fn "$font" -sb "$color8" -i -l 10 | awk '{print $2}')
+app=$(echo -e "  Brave\n  Terminal\n切  Telegram\n  Code\n  Minecraft\nﭮ  Discord" | dmenu -fn "$font" -i -l 10 | awk '{print $2}')
 
 case $app in
 

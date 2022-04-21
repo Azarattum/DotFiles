@@ -2,6 +2,5 @@
 
 killall dmenu && exit
 
-source ~/.cache/wal/colors.sh
-
-dmenu_run -fn "firacode nerd font:pixelsize=14" -sb "$color8"
+font="firacode nerd font:pixelsize=14"
+dmenu_run -fn "$font"
