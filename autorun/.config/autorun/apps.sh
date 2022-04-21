@@ -3,8 +3,6 @@
 # Clean up
 killall picom polybar btops keymapper playerctl cornora
 
-# Update monitor
-xrandr --auto
 # Set arrow cursor
 xsetroot -cursor_name left_ptr
 # Keyboard layout

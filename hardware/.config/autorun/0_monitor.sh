@@ -1,4 +1,4 @@
 #!/bin/sh
 
-# Remove fake monitor
+xrandr --auto
 bspc monitor LVDS-1-1 -r
