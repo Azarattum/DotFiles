@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# Setup environment
+source $HOME/.config/shell/profile.sh
+xrandr --auto
+
 # Trigger autorun
 $HOME/.config/autorun/run
 
