@@ -37,7 +37,7 @@ constant = "○ "
 "切 " = ["TelegramDesktop"]
 
 [[names.classified]]
-" " = ["gdlauncher", "Minecraft* 1.16.5"]
+" " = ["gdlauncher", "Minecraft* 1.16.5", "Minecraft* 1.17.1", "Minecraft* 1.18.2"]
 
 [[names.classified]]
 " " = ["DesktopEditors"]
