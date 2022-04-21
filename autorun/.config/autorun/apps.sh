@@ -8,7 +8,7 @@ xrandr --auto
 # Set arrow cursor
 xsetroot -cursor_name left_ptr
 # Keyboard layout
-setxkbmap -layout us,ru -option grp:win_space_toggle
+(sleep 1 && setxkbmap -layout us,ru -option grp:win_space_toggle -option terminate:ctrl_alt_bksp) &
 # Wallpaper
 xwallpaper --zoom .config/wall.jpg &
 # Compositor
